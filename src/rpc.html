@@ -1,0 +1,23 @@
+<template>
+  <require from="./switchbutton"></require>
+  <section>
+    <h1>${heading}</h1>
+
+    <h2>An example showing RPC </h2>
+
+    <form role="form" submit.delegate="calc()">
+      <div class="form-group">
+        <label for="fn">First Value</label>
+        <input type="text" value.bind="firstValue" class="form-control" id="fn" placeholder="first value">
+      </div>
+      <div class="form-group">
+        <label for="ln">Second Value</label>
+        <input type="text" value.bind="secondValue" class="form-control" id="ln" placeholder="second value">
+      </div>
+      <div class="form-group">
+        <label>Result</label>
+        <p class="help-block">${result}</p>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+  </section>
+</template>
